@@ -27,36 +27,34 @@
     </div>
 
     <!---Featured Image-->
-    <div>
-
-      <h3 style="color:rgb(207, 92, 10);font-family:Impact;text-align: center;">Featured Mars Image</h3>
-      <img src="{{data.featured_image_url}}" style="max-width:100%;" alt="mars image">
-    </div>
-
     <div class="container">
       <div class='row'>
         <div class="col-lg-8 col-md-8 col-sm-6 col-xm-12">
-          <h3 style="color:rgb(134, 16, 81); font-family:Impact">Mars Facts</h3>
-          <table>{{ data.html_table|safe}}</table>
+          <h3 style="color:rgb(207, 92, 10);font-family:Impact;text-align: center;">Featured Mars Image</h3>
+          <img src="{{data.featured_image_url}}" style="max-width:100%;" alt="mars image">
         </div>
-
         <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
           <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
             <div class="card-header">Current Weather on Mars</div>
-              <h5 class="card-title"> </h5>
-              <p class="card-text">{{data.mars_weather}}</p>
-            </div>
+            <h5 class="card-title"> </h5>
+            <p class="card-text">{{data.mars_weather}}</p>
           </div>
-
+          <div>
+            <h3 style="color:rgb(134, 16, 81); font-family:Impact">Mars Facts</h3>
+            <table>{{ data.html_table|safe}}</table>
+          </div>
         </div>
+
       </div>
+    </div>
 
     <!---CONTAINTER CLOSE-->
 
 
 
     <br>
-    <h1 style="padding-top:30px; padding-bottom: 30px; text-align: center; color:rgb(167, 167, 79);font-family:Impact;">Mars Hemispheres</h1>
+    <h1 style="padding-top:30px; padding-bottom: 30px; text-align: center; color:rgb(167, 167, 79);font-family:Impact;">
+      Mars Hemispheres</h1>
 
   </div>
   <!---body->container closed-->
